@@ -1,11 +1,12 @@
 /*
-  A header file, ending in .h can be used in C with
-  #include, to fetch the header file and include the file
+  A header file, ending in .h can be used in C with 
+  #include, to fetch the header file and include the file 
   inside the file, combining it with the current file. It's
   similar to a module, but where you can only declare
   constants and functions. #include can only be used on the
   global scope, and tells the preprocessor to used the
-  declarations at this point
+  declarations at this point. By convention, #include always 
+  figures at the top of the file. 
 */
 
 #include <stdio.h>
@@ -84,7 +85,12 @@ int main(int argc, char *argv[])
     %g or %G: %g switches between %f and %e depending on
       the magnitude of the number, and %G switches between
       %E and %F for depending on the magnitude of the
-      magnitude of hte number ;
+      magnitude of the number ; Use double or float, instead 
+      of int to print these numbers ; 
+
+    %zu : refers to an argument of size_t (when printing) 
+      usually obtained with the sizeof function, representing
+      the size of objects in bytes.
 
     every placeholder's value are used as parameters of 
     printf(), such as this : 
