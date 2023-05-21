@@ -12,10 +12,10 @@
 #include <stdio.h>
 
 /*
-  the main function, returns an int value, 0 for unsucessful
-  value, and 1 for sucessful value. You could theoretically
-  return 3, or 4 and the program would run, but it's not
-  recommended.
+  the main function, returns an int value, 0 for 
+  unsuccessful value, and 1 for a successful value. You 
+  could theoretically return 3, or 4 and the program would 
+  run, but it's not recommended.
 
   You can pass in two parameters in main(), argc, the number
   of command line parameters and argv, the aforementioned
@@ -54,7 +54,10 @@
     5. Low level operations ;
 
   Many of these operations need dereferencing in order to
-  work with the value.
+  work with the value. You can also use char** argv, instead 
+  of char *argv[] to obtain an array of pointer of pointers 
+  pointing towards strings. You can access the pointers' 
+  value directly with [] and without dereferencing. 
 */
 
 // Here brackets represents a code block, or a scope ;
@@ -68,7 +71,7 @@ int main(int argc, char *argv[])
 
     %d : integers
     %i : identical to %d in this context, but cannot be
-    used intechangably in some contexts. In other contexts
+    used interchangeably in some contexts. In other contexts
     it can represent signed or unsigned integers but also
     hexadecimal numbers or octal numbers ;
 
@@ -78,7 +81,7 @@ int main(int argc, char *argv[])
     %s: string of characters ;
     %p: pointer address ;
     %x or %X: unsigned hexadecimal integers %x is for
-      lowerase hexadecimal and %X for uppercase ;
+      lowercase hexadecimal and %X for uppercase ;
     %o: unsigned octal integers ;
     %e or %E: numbers in scientific notation. %e is for
       lowercase e and %E is for uppercase E ;
@@ -99,10 +102,10 @@ int main(int argc, char *argv[])
     int num2 = 16; 
     printf("%d %d", num, num2); // 8 16 
 
-    of course, you can also use litteral values inside the
+    of course, you can also use literal values inside the
     printf function. New lines are not inserted automatically 
     so either append a new line character (\n) at the start 
-    or the end of the prinf statement or use puts() to have 
+    or the end of the printf statement or use puts() to have 
     a print with a new line 
   */
 
